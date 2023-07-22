@@ -1,0 +1,263 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+
+    position: relative;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 50px;
+    margin-left: 25px;
+    padding-top: 5%;
+    
+}
+
+.section2 {
+    margin-top: 6%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Início dos círculos pela página! */
+
+.circle {
+    width: 250px;
+    height: 200px;
+
+    background-color: rgb(51, 51, 143);
+    left: 0px;
+    top: 0px;
+    border-bottom-right-radius: 100%;
+
+    position: absolute;
+    z-index: 0;
+}
+
+.circle2 {
+    position: absolute;
+    left: 40px;
+    top: 600px;
+    border-radius: 100%;
+
+    width: 250px;
+    height: 250px;
+
+    background-color: rgb(51, 51, 143);
+}
+
+.circle3 {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    border-top-left-radius: 100%;
+
+    width: 300px;
+    height: 300px;
+
+    background-color: rgb(51, 51, 143);
+
+}
+
+.circle4 {
+    position: absolute;
+    left: 5px;
+    bottom: 675px;
+    border-radius: 100%;
+
+    width: 75px;
+    height: 75px;
+
+    background-color: rgb(51, 51, 143);
+
+}
+
+/* Fim dos circulos pela página! */
+
+
+/* Início dos estilos referentes aos componentes texto! */
+
+.tittle {
+    flex-direction: column;
+    line-height: 12px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(51, 51, 143);
+    transition: 0.3s;
+}
+
+button {
+    border: 2px solid rgb(51, 51, 143);
+    background-color: black;
+
+    font-size: 20px;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+
+    margin-top: 15px;
+    padding: 10px 40px 10px 40px;
+    border-radius: 15px;
+
+}
+
+button:hover {
+    background-color: rgb(51, 51, 143);
+    transition: 0.3s;
+}
+
+.insc-btn {
+    border: 2px solid rgb(51, 51, 143);
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+
+.insc-btn:hover {
+    color: white;
+    background-color: rgb(51, 51, 143);
+    transition: 0.3s;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+h2 {
+    font-size: 3em;
+    line-height: 12px;
+}
+
+p {
+    text-align: justify;
+    line-height: 20px;
+    max-width: 600px;
+}
+
+span {
+    color: rgb(51, 51, 143);
+}
+
+/* Fim dos estilos referentes aos componentes texto! */
+
+/* Início dos estilos referentes aos componentes Form! */
+
+.form {
+    border: 2px solid rgb(51, 51, 143);
+    font-size: 25px;
+
+    padding: 10% 5% 10% 5%;
+    border-radius: 3%;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+}
+
+form [type="submit"] {
+    
+    margin: 0 auto;
+    margin-top: 4%;
+    height: 50px;
+    width: 50%;
+
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+
+
+    color: white;
+    border: 2px solid rgb(51, 51, 143);
+    background-color: black;
+}
+
+form [type="submit"]:hover {
+    background-color: rgb(51, 51, 143);
+    transition: 0.3s;
+}
+
+.input-email {
+    margin-top: 20px;
+    padding: 5px;
+
+    height: 2em;
+    width: 80%;
+
+    align-self: center;
+
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    text-indent: 10px;
+}
+
+.input-mens {
+    margin-top: 20px;
+
+    padding-top: 10px;
+    padding-bottom: 7em;
+    
+    width: 80%;
+
+    text-indent: 10px;
+    vertical-align: top;
+
+    align-self: center;
+
+    overflow-wrap: break-word;
+
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    position: relative;
+}
+
+.input-mens::placeholder {
+    position: absolute;
+    top: 10px;
+}
+
+/* Fim dos estilos referentes aos componentes Form! */
+
+/* Início dos estilos referentes aos componentes Imagens! */
+
+.img1 {
+    border-radius: 50%;
+}
+
+/* Fim dos estilos referentes aos componentes Imagens! */
